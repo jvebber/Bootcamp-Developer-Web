@@ -21,3 +21,4 @@ console.log('\n Array com as posições separadas pelo delimitador:', splittedTe
 
 
 
+
