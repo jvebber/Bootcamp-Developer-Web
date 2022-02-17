@@ -109,7 +109,7 @@ const symbol2 = Symbol();
 //Symbols são únicos
 console.log("\nSymbol1 é igual ao Symbol2 ?", symbol1 === symbol2);
 
-//Symbols criam propriedades que não enumerables
+//Symbols criam propriedades que não são enumerables
 const nameSymbol1 = Symbol();
 const lastNameSymbol2 = Symbol();
 
@@ -121,7 +121,7 @@ const user = {//Objeto exemplo
     age: 32
 }
 
-for (const key in user) {
+for (const key in user) {//for não passa pelos symbols
     if (user.hasOwnProperty(key)){
         console.log(`\nValor da chave ${key}: ${user[key]}`);
     }   
