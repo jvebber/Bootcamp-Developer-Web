@@ -65,7 +65,7 @@ console.log("\nQuantidade de itens do array:", persons.length);
 //Verificar se é array usando "isArry"
 console.log("\nA variável persons é um array?:", Array.isArray(persons));
 
-//Itera os itenns do array
+//Itera os itens do array
 persons.forEach((person, index) => {
     console.log(`Nome: ${person.name}, está no index: ${index}`);
 });
