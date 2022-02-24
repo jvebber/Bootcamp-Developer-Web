@@ -16,5 +16,17 @@
         </ol>
         Para adquirir conhecimentos a respeito de branchs eu assisti ao seguinte video do <a href="https://www.youtube.com/watch?v=1E-qLNZDf0o" target="_blanck">YouTube.</a>
     </p>
+    <h2>Comandos para realizar um branch</h2>
+    <ol>
+        <li>git branch: para verificar as branchs existentes</li>
+        <li>git checkout -b nome_branch: para criar uma nova branch</li>
+        <li>Após trabalhar normalmente no projeto (na branch), deve-se dar um commit normal </li>
+        <li>Após isso, dar um push da branch no repositório remoto: git push -u origin nome_branch</li>
+        <li>Depois, deve-se voltar para voltar para a branch master: git checkout master</li>
+        <li>Aí é só dar um merge para aplicar na branch master as alterações da branch criada: git merge nome_branch</li>
+        <li>Por fim, só atualizar a branch master: git push origin master</li>
+        <li>git branch -d nome_branch: para apagar a branch do repositório local</li>
+        <li>git push origin --delete nome_branch: para apagar a branch do repositório remoto</li>
+    </ol>
 </body>
 </html>
