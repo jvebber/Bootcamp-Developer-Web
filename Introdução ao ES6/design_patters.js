@@ -11,12 +11,19 @@ TIPOS:
 de comunicação entre os objetos
 
 
-Mais usados:
+
+MAIS USADOS:
 - Factory      Criação 
 - Singleton    Criação 
 - Decorator    Estrutural
 - Observer     Comportamental 
 - Module
+
+
+
+
+
+
 
 */
 
