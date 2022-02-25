@@ -19,15 +19,68 @@ MAIS USADOS:
 - Observer     Comportamental 
 - Module
 
-
-
-
-
-
-
 */
 
+//FACTORY
 
+function Pessoa(customProperties) {
+    return{
+        name: "Jocenei",
+        lastName: "Vebber",
+        ...customProperties
+    }
+}
+
+const p = Pessoa({name: "Custom Name", age: 32});//Se chamar a função usando "New Pessoa", não será considerado uma factory
+
+console.log(p);//{ name: 'Custom Name', lastName: 'Vebber', age: 32 }
+
+
+
+//SINGLETON - O objetivo desse pattern é criar uma única instância de uma função e retorná-la toda vez em que for necessário utilizá-la.Exemplo
+
+function User(){
+    if(!User.instance){
+        User.instance = this;
+    }
+
+    return User.instance;
+}
+
+const user1 = User.call({name: "Jocenei"});
+const user2 = User.call({name: "Custom Name"});
+
+console.log(user1);//Jocenei
+console.log(user2);//Jocenei
+
+
+
+/*DECORATOR - Recebe outra função como parâmetro e estende o seu comportamento sem modificá-la explicitamente. 
+Enriquece a utilização de uma função, ao condicionar sua execução à outra função.
+Exemplo:
+
+*/
+var loggedIn = false;
+
+function callIfAuthenticated(fn){//função que autentica a chamada de outra função
+    return !!loggedIn && fn();
+}
+
+
+function sum(a,b){//só é executada se for autenticada pela função callIfAuthenticated
+    return a + b;
+}
+
+function div(a,b){//só é executada se for autenticada pela função callIfAuthenticated
+    return a / b;
+}
+
+
+console.log(callIfAuthenticated(() => div(2, 3)));//false
+loggedIn = true;
+console.log(callIfAuthenticated(() => sum(2, 3)));//5
+//loggedIn = true;
+console.log(callIfAuthenticated(() => div(2, 3)));//0.66666...
 
 
 
