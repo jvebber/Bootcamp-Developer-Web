@@ -55,7 +55,9 @@ console.log(user2);//Jocenei
 
 
 
-/*DECORATOR - Recebe outra função como parâmetro e estende o seu comportamento sem modificá-la explicitamente. 
+/*
+
+DECORATOR - Recebe outra função como parâmetro e estende o seu comportamento sem modificá-la explicitamente. 
 Enriquece a utilização de uma função, ao condicionar sua execução à outra função.
 Exemplo:
 
