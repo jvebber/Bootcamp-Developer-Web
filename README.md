@@ -22,7 +22,7 @@ Descrição: Por meio do Bootcampo Eduzz Fullstack Developer, tive a oportunidad
 	- Introdução prática a computação em nuvem usando AWS
 
 
-Link do Bootcamp: https://web.dio.me/track/eduzz-fullstack-developer-3
+![ Link do Bootcamp: ](https://web.dio.me/track/eduzz-fullstack-developer-3)
 
 
 
