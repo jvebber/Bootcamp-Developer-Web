@@ -13,7 +13,7 @@
 
 const numbers = [2,3,4,5,6,8,9,10,15,25];
 
-for (let index = 0; index < numbers.length; index++) {
+/* for (let index = 0; index < numbers.length; index++) {
     const element = numbers[index];
     console.log(`O elemento do array é ${element}`);
 }
@@ -36,12 +36,12 @@ do {
     index++;
 } while (index < numbers.length);
 
-numbers.foo = "Hello"; // para aplicar for in and for of logo abaixo
+numbers.foo = "Hello"; // para aplicar for in and for of logo abaixo */
 
 //for in 
-for (var key in numbers) {
-        console.log("Lendo array com For In, elemento:", key);
-}
+// for (var key in numbers) {
+//         console.log("Lendo array com For In, elemento:", key);
+// }
 
 
 //for of
