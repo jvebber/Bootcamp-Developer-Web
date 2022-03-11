@@ -13,10 +13,10 @@ de comunicação entre os objetos
 
 
 MAIS USADOS:
-- Factory      Criação 
-- Singleton    Criação 
-- Decorator    Estrutural
-- Observer     Comportamental 
+- Factory      tipo: Criação 
+- Singleton    tipo: Criação 
+- Decorator    tipo: Estrutural
+- Observer     tipo: Comportamental 
 - Module
 
 */
@@ -37,7 +37,7 @@ console.log(p);//{ name: 'Custom Name', lastName: 'Vebber', age: 32 }
 
 
 
-//SINGLETON - O objetivo desse pattern é criar uma única instância de uma função e retorná-la toda vez em que for necessário utilizá-la.Exemplo
+//SINGLETON - O objetivo é criar uma única instância de uma função e retorná-la toda vez em que for necessário utilizá-la.Exemplo
 
 function User(){
     if(!User.instance){
@@ -77,10 +77,14 @@ function div(a,b){//só é executada se for autenticada pela função callIfAuth
 
 
 console.log(callIfAuthenticated(() => div(2, 3)));//false
+
 loggedIn = true;
+
 console.log(callIfAuthenticated(() => sum(2, 3)));//5
-//loggedIn = true;
+
 console.log(callIfAuthenticated(() => div(2, 3)));//0.66666...
+
+//OBSERVER
 
 
 
