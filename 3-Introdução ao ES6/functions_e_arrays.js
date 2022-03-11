@@ -9,7 +9,7 @@ function fn(){
 console.log(fn());
 
 //Função 2
-const arrowFunc = () => "Code here";
+const arrowFunc = () => "Code here 2";
 console.log(arrowFunc());
 
 // Função 1 é a mesma coisa que Função 2
