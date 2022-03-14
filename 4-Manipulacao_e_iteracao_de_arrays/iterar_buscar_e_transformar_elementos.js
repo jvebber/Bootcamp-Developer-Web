@@ -24,9 +24,3 @@ const NewArray = subArray.flat(1)
 
 console.log(NewArray)//[ 1, 2, 3, 4, 5, [ 6, 7, 8, 9 ] ]
 
-
-
-
-
-
-
