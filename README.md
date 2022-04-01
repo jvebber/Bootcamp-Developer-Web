@@ -1,6 +1,6 @@
 # Bootcamp-Developer-Web
 
-Descrição: Por meio do Bootcampo Eduzz Fullstack Developer, tive a oportunidade de aprender sobre os principais elementos da Stack de Javascript. Abaixo os principais conteúdos estudados:
+Descrição: Por meio do Bootcampo Eduzz Fullstack Developer, estou tendo a oportunidade de aprender sobre os principais elementos da Stack de Javascript. Abaixo os principais conteúdos estudados:
 
 	- Lógica de Programação Essencial
 	- Projetos ágeis com SCRUM
